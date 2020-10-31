@@ -6,14 +6,14 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 
 @Entity
-@Table(name = "order_table")
+@Table(name = "hanuman_order")
 @Data
 public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(name = "date", nullable = false)
+    @Column(name = "orderTime", nullable = false)
     private Timestamp orderTime;
 
     @Column(name = "amount", nullable = false)

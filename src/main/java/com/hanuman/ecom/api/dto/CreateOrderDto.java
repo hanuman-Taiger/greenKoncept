@@ -1,6 +1,5 @@
 package com.hanuman.ecom.api.dto;
 
-import com.hanuman.ecom.domain.Order;
 import lombok.Builder;
 import lombok.Data;
 

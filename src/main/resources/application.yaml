@@ -1,15 +1,8 @@
-server:
-  contextPath: /test
-
 spring:
   datasource:
-    url: jdbc:h2:mem:demodb
-    driverClassName: org.h2.Driver
-    username: sa
-    password: password
+    url: jdbc:mysql://kem.greenkoncepts.com:32224/GKTECHNICALTEST
+    driverClassName: com.mysql.jdbc.Driver
+    username: gktest
+    password: gktest123
   jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
-  h2:
-    console:
-      enabled: true
-      path: /h2
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect

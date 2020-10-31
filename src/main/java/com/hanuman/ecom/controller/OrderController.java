@@ -9,6 +9,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
@@ -18,6 +20,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
+@Validated
 public class OrderController implements OrderApi {
 
     private final Logger LOGGER = LoggerFactory.getLogger(this.getClass());
@@ -33,7 +36,7 @@ public class OrderController implements OrderApi {
     }
 
     @Override
-    public ResponseEntity<OrderDto> createOrder(CreateOrderDto order) {
+    public ResponseEntity<OrderDto> createOrder(@Valid @RequestBody CreateOrderDto order) {
 
         LOGGER.info("==> Creating order {}", order);
 
