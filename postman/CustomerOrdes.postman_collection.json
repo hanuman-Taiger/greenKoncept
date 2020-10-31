@@ -1,0 +1,71 @@
+{
+	"variables": [],
+	"info": {
+		"name": "CustomerOrdes",
+		"_postman_id": "766b3f69-34f9-8d85-461d-180da27c2b7e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Customer Create",
+			"request": {
+				"url": "http://localhost:8080/customer",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Prasad\",\n\t\"age\":23,\n\t\"address\":\"India\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Order Create",
+			"request": {
+				"url": "http://localhost:8080/customer",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Prasad\",\n\t\"age\":23,\n\t\"address\":\"India\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Orders",
+			"request": {
+				"url": "http://localhost:8080/order",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Prasad\",\n\t\"age\":23,\n\t\"address\":\"India\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
